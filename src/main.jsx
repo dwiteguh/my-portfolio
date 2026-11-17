@@ -106,7 +106,7 @@ const projects = [
       "Domain dan deployment",
       "Optimasi dasar SEO",
     ],
-    image: "/images/vanesia.jpg",
+    image: `${import.meta.env.BASE_URL}images/vanesia.jpg`,
     link: "https://vanesia.web.id",
     github: "https://github.com/dwiteguh/vanesia",
     label: "Website bisnis",
@@ -124,7 +124,7 @@ const projects = [
       "Riwayat transaksi",
       "Pencatatan pemasukan dan pengeluaran",
     ],
-    image: "/images/myfinance.jpg",
+    image: `${import.meta.env.BASE_URL}images/myfinance.jpg`,
     link: "https://github.com/dwiteguh/myfinance",
     github: "https://github.com/dwiteguh/myfinance",
     label: "Aplikasi mobile",
@@ -143,7 +143,7 @@ const projects = [
       "Keuangan dan tagihan",
       "Monitoring keluhan",
     ],
-    image: "/images/kosmonitor.jpg",
+    image: `${import.meta.env.BASE_URL}images/kosmonitor.jpg`,
     link: null,
     github: "https://github.com/dwiteguh/kosmonitor",
     label: "Sistem informasi kos",
@@ -200,9 +200,8 @@ function App() {
             <div className="profile-frame">
               <div className="profile-placeholder">
                 <img
-                  src="/images/profil.jpg"
-                  alt="Foto Moch Dwi Teguh Akbar Rusdianto"
-                  className="profile-photo"
+                  src={`${import.meta.env.BASE_URL}images/profil.jpg`}
+                  alt="Foto Profil"
                 />
               </div>
               <div className="frame-corner corner-tl" /><div className="frame-corner corner-br" />
